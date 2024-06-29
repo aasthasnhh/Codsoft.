@@ -1,0 +1,62 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args){
+        
+        Scanner sc= new Scanner(System.in);
+        
+        System.out.println("Welcome to the student grade calculator site");
+        
+        System.out.println("\nEnter your name: ");
+        Scanner h=new Scanner(System.in);
+        String r=h.next();
+        
+        System.out.println("Enter your hindi marks:  ");
+        int a=sc.nextInt();
+        
+        Scanner b=new Scanner(System.in);
+        System.out.println("Enter your maths marks: ");
+        int y = b.nextInt();
+        
+        Scanner d=new Scanner(System.in);
+        System.out.println("Enter your English marks: ");
+        int l= d.nextInt();
+        
+        Scanner f=new Scanner(System.in);
+        System.out.println("Enter your cse marks: ");
+        int w=f.nextInt();
+        
+        Scanner g=new Scanner(System.in);
+        System.out.println("Enter your Electrical marks: ");
+        int u=g.nextInt();
+        
+        int k=(a+y+l+w+u);
+        System.out.println("\nTotal marks obtained by" + r + "is: " + k);
+        System.out.println("\n Average marks obtained by"+ r+ "is: ");
+        int o=k/5;
+        System.out.println(u);
+        
+        
+        if(o>90){
+            System.out.println("\n Overall the Grade is A");
+        }
+        
+        else if (o>80){
+            System.out.println("\nOverall the grade is B");
+        }
+        
+        else if (o>70){
+            System.out.println("\nOverall the grade is C");
+        }
+        else if (o>60){
+            System.out.println("\nOverall the grade is D");
+        }
+        
+        else{
+            System.out.println("\nOverall the"+r+ "is Fail");
+        }
+        
+        
+        
+       
+    }
+}
